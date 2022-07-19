@@ -4,10 +4,10 @@
   #define DATAPIN 3  // PS/2 data I/O
   #define IRQPIN 2   // PS/2 clock I/O
   #define low LOW
-  #define YES 1;
-  #define NO 0;
-  #define no 0;
-  #define yes 1;
+  //#define YES 1;
+  //#define NO 0;
+ // #define no 0;
+ // #define yes 1;
   PS2KeyAdvanced keyboard;
   PS2KeyMap keymap;
   uint16_t Wait_Time = 40;  // for debug use only Set to ? xxms for released program
@@ -206,12 +206,12 @@ void loop()
           KEY = 0x02;  // Select key 'b' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 0;
           break;
-        case' c':
-          KEY = 0x03;  // Select key' c' convert key code so decoder can slect correct matrix key(s)
+        case 'C':
+          KEY = 0x03;  // Select key 'C' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 1;
           break;
-        case' c':
-          KEY = 0x03;  // Select key' c' convert key code so decoder can slect correct matrix key(s)
+        case 'c':
+          KEY = 0x03;  // Select key 'c' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 0;
           break;
         case 'D':
@@ -398,11 +398,11 @@ void loop()
           KEY = 0x1A;  // Select key 'z' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 0;
           break;
-        case 0x1020:
-        case '':     //spacebar
-          KEY = 0x1F;  // Select key 'z' convert key code so decoder can slect correct matrix key(s)  
-          SHIFT = 0;
-          break;
+        // case 0x1020:
+        // case '':     //spacebar
+        //  KEY = 0x1F;  // Select key 'z' convert key code so decoder can slect correct matrix key(s)  
+        //  SHIFT = 0;
+        //  break;
                       //NUMBERS START HERE
         case '0':
         case 0x1030:
@@ -575,7 +575,7 @@ void loop()
           break;
            // CONTROL KEYS ,ENTER> ... ect              
           
-          0case 0x000D :      // <ENTER KEY> 
+          case 0x000D :      // <ENTER KEY> 
           case 0X100D:      // <ENTER WITH SHIFT LOCK ON>
           KEY = 0x30;  
           SHIFT = 0;
@@ -686,3 +686,5 @@ void chrout(int KEY,int SHIFT)
   
   }
 }
+
+  
