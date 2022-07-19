@@ -12,3 +12,9 @@ I will be adding USB support to this project in the future currently A "USB to P
 
 *Hardware schematic
 To come soon!!!
+
+Required Libs:
+PS2KeyAdvanced.h
+https://github.com/techpaul/PS2KeyAdvanced
+PS2KeyMap.h
+https://github.com/techpaul/PS2KeyMap
