@@ -206,12 +206,12 @@ void loop()
           KEY = 0x02;  // Select key 'b' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 0;
           break;
-        case' c':
-          KEY = 0x03;  // Select key' c' convert key code so decoder can slect correct matrix key(s)
+        case 'C':
+          KEY = 0x03;  // Select key 'C' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 1;
           break;
-        case' c':
-          KEY = 0x03;  // Select key' c' convert key code so decoder can slect correct matrix key(s)
+        case 'c':
+          KEY = 0x03;  // Select key 'c' convert key code so decoder can slect correct matrix key(s)
           SHIFT = 0;
           break;
         case 'D':
@@ -399,8 +399,8 @@ void loop()
           SHIFT = 0;
           break;
         case 0x1020:
-        case '':     //spacebar
-          KEY = 0x1F;  // Select key 'z' convert key code so decoder can slect correct matrix key(s)  
+        case ' ':     //spacebar
+          KEY = 0x1F;  // Select key 'spacebar' convert key code so decoder can slect correct matrix key(s)  
           SHIFT = 0;
           break;
                       //NUMBERS START HERE
@@ -575,7 +575,7 @@ void loop()
           break;
            // CONTROL KEYS ,ENTER> ... ect              
           
-          0case 0x000D :      // <ENTER KEY> 
+          case 0x000D :      // <ENTER KEY> 
           case 0X100D:      // <ENTER WITH SHIFT LOCK ON>
           KEY = 0x30;  
           SHIFT = 0;
